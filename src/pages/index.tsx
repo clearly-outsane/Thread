@@ -1,4 +1,6 @@
 import dynamic from 'next/dynamic'
+import React from 'react'
+
 import Instructions from '@/components/dom/Instructions'
 
 // Dynamic import is used to prevent a payload when the website starts, that includes threejs, r3f etc..
@@ -8,7 +10,7 @@ import Instructions from '@/components/dom/Instructions'
 const Logo = dynamic(() => import('@/components/canvas/Logo'), { ssr: false })
 
 // Dom components go here
-export default function Page(props) {
+export default function Page() {
   return (
     <Instructions>
       This is a minimal starter for Nextjs + React-three-fiber and Threejs. Click on the{' '}
@@ -20,7 +22,7 @@ export default function Page(props) {
 
 // Canvas components go here
 // It will receive same props as the Page component (from getStaticProps, etc.)
-Page.canvas = (props) => <Logo scale={0.5} route='/blob' position-y={-1} />
+Page.canvas = () => <Logo scale={0.5} route='/blob' position-y={-1} />
 
 export async function getStaticProps() {
   return { props: { title: 'Index' } }

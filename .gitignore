@@ -40,3 +40,8 @@ report.*.json
 
 # .vscode Debugging
 .vscode/*-debug-profile
+
+# next-sitemap
+robots.txt
+sitemap.xml
+sitemap-*.xml
