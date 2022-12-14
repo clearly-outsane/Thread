@@ -10,7 +10,7 @@ A minimalist starter for React, React-three-fiber and Threejs.
 - First load JS ~ 79kb
 - Lighthouse score of 100 (Performance, Accessibility, Best Practices, SEO)
 
-This starter allows you to navigate seamlessly between pages with dynamic dom and/or canvas content without reloading or creating a new canvas every time.
+This template allows you to navigate seamlessly between pages with dynamic dom and/or canvas content without reloading or creating a new canvas every time.
 
 ### ⚫ Demo :
 
