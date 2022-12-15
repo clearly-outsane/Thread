@@ -12,11 +12,12 @@ export const appRouter = router({
         text: z.custom<FieldValues>(),
       }),
     )
-    .mutation(({ input }) => {
+    .mutation(async ({ input }) => {
+      console.log(input.text)
       // do a cypher query to add a note
 
-      const res = write(`
-      CREATE (n:NOTE {text:${input.text}})
+      const res = await write(`
+      CREATE (n:NOTE {text:'${input.text.note}'})
       RETURN n`)
       console.log(res)
     }),

@@ -31,8 +31,8 @@ Page.canvas = () => {
       <Html>
         <Input
           center
-          onSubmit={(note) => {
-            mutation.mutate({ text: note })
+          onSubmit={(data) => {
+            mutation.mutate({ text: data.note })
           }}
         />
       </Html>
