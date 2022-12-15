@@ -1,17 +1,3 @@
-[![Downloads](https://img.shields.io/npm/dt/create-r3f-app.svg?style=flat&colorA=000000&colorB=000000)](https://www.npmjs.com/package/create-r3f-app) [![Discord Shield](https://img.shields.io/discord/740090768164651008?style=flat&colorA=000000&colorB=000000&label=discord&logo=discord&logoColor=ffffff)](https://discord.gg/ZZjjNvJ)
-
-# :japanese_castle: React-Three-Next starter
-
-A minimalist starter for React, React-three-fiber and Threejs.
-
-![](https://user-images.githubusercontent.com/2223602/192515435-a3d2c1bb-b79a-428e-92e5-f44c97a54bf7.jpg)
-
-- TTL ~ 100ms
-- First load JS ~ 79kb
-- Lighthouse score of 100 (Performance, Accessibility, Best Practices, SEO)
-
-This starter allows you to navigate seamlessly between pages with dynamic dom and/or canvas content without reloading or creating a new canvas every time.
-
 ### ⚫ Demo :
 
 [![image](https://user-images.githubusercontent.com/2223602/192515587-eac9e26b-d691-4496-a614-85729764b6b0.jpg)](https://react-three-next.vercel.app/)
