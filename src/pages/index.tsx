@@ -26,6 +26,7 @@ export default function Page() {
 // It will receive same props as the Page component (from getStaticProps, etc.)
 Page.canvas = () => {
   const mutation = trpc.note.useMutation()
+  const fetchNotes = trpc.fetchNotes.useQuery({})
   return (
     <>
       <Html>
@@ -35,6 +36,13 @@ Page.canvas = () => {
             mutation.mutate({ text: data.note })
           }}
         />
+
+        <ul>
+          <li>
+            fetchingNotes.. ({fetchNotes.status}):
+            <pre>{JSON.stringify(fetchNotes.data, null, 2)}</pre>
+          </li>
+        </ul>
       </Html>
     </>
   )
