@@ -1,5 +1,4 @@
 import { Html } from '@react-three/drei'
-import { useRouter } from 'next/router'
 import React from 'react'
 
 import Input from '@/components/Input'
@@ -13,13 +12,7 @@ import { trpc } from '@/utils/trpc'
 
 // Dom components go here
 export default function Page() {
-  const router = useRouter()
-
-  return (
-    <div className='relative min-h-screen' onClick={() => router.push('blob')}>
-      bing bong
-    </div>
-  )
+  return <div className='relative min-h-screen'>bing bong</div>
 }
 
 // Canvas components go here

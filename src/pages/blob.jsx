@@ -3,7 +3,7 @@ import dynamic from 'next/dynamic'
 const Blob = dynamic(() => import('@/components/canvas/Blob'), { ssr: false })
 
 export default function Page() {
-  return <>bing bonndd</>
+  return <div className='relative'>bing bonndd</div>
 }
 
 Page.canvas = () => <Blob route='/' position-y={-0.75} />
