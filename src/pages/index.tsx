@@ -1,4 +1,5 @@
 import { Html } from '@react-three/drei'
+import dynamic from 'next/dynamic'
 import React from 'react'
 
 import Input from '@/components/Input'
@@ -9,6 +10,7 @@ import { trpc } from '@/utils/trpc'
 // WARNING ! errors might get obfuscated by using dynamic import.
 // If something goes wrong go back to a static import to show the error.
 // https://github.com/pmndrs/react-three-next/issues/49
+const Grid = dynamic(() => import('@/components/canvas/Grid'), { ssr: false })
 
 // Dom components go here
 export default function Page() {
@@ -22,6 +24,8 @@ Page.canvas = () => {
   // const fetchNotes = trpc.fetchNotes.useQuery({})
   return (
     <>
+      <axesHelper />
+      <Grid />
       <Html>
         <Input
           center
