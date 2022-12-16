@@ -52,7 +52,7 @@ const Input = ({ center = false, onSubmit }: InputTypes) => {
               type='submit'
               className='inline-flex items-center rounded-lg bg-blue-700 py-2.5 px-4 text-center text-xs font-medium text-white hover:bg-blue-800 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900'
             >
-              Post
+              Sync
             </button>
           </div>
         </div>
