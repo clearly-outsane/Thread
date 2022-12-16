@@ -25,7 +25,7 @@ const Input = ({ center = false, onSubmit }: InputTypes) => {
     <>
       <form onSubmit={handleSubmit(_onSubmit)}>
         <div
-          className={`mb-4 w-full min-w-[360px] ${
+          className={`mb-4 w-full min-w-[420px] ${
             center ? 'translate-x-[-50%] translate-y-[-50%]' : ''
           } rounded-lg border border-gray-200 bg-gray-50 dark:border-gray-600 dark:bg-gray-700`}
         >
